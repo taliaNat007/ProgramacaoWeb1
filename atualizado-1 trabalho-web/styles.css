@@ -1,0 +1,107 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #ffdab9, #ff6347);
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: #8b0000;
+    font-size: 4em;
+    text-shadow: 4px 4px 10px #ffdab9, -4px -4px 10px #ff6347;
+}
+
+#funny-text {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px 10px #ffdab9, -2px -2px 10px #ff6347;
+}
+
+/* Estilos dos Botões */
+#crazy-button, #baby-button{
+    padding: 20px 40px;
+    font-size: 1.5em;
+    color: #fff;
+    border: 5px solid #ffdab9;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px #ffdab9, 0px 0px 20px #ff6347;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: buttonGlow 1s infinite;
+}
+
+/* Estilos específicos do botão de peido */
+#crazy-button {
+    background-color: #a52a2a;
+    top: 30%;
+    left: 50%;
+}
+
+#crazy-button:hover {
+    background-color: #d2691e;
+}
+
+/* Estilos específicos do botão de choro de bebê */
+#baby-button {
+    background-color: #32CD32;
+    top: 50%;
+    left: 50%;
+}
+
+#baby-button:hover {
+    background-color: #228B22;
+}
+
+
+
+/* Estilos dos emojis e imagens */
+#surprise-container img,
+#surprise-container div {
+    position: absolute;
+    font-size: 50px;
+    animation: bounce 2s infinite;
+    opacity: 1;
+}
+
+/* Animações */
+@keyframes buttonGlow {
+    0%, 100% { box-shadow: 0px 0px 20px #ffdab9, 0px 0px 20px #ff6347; }
+    50% { box-shadow: 0px 0px 40px #ffdab9, 0px 0px 40px #ff6347; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    #crazy-button, #baby-button, #dog-button {
+        font-size: 1em;
+        padding: 15px 30px;
+    }
+}
+.third-button {
+    padding: 15px 25px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff4500;
+    border: 3px solid #ffd700;
+    border-radius: 15px;
+    position: absolute;
+    cursor: pointer;
+    animation: buttonGlow 1s infinite;
+}
+
+#funny-text {
+    font-size: 2em;
+    color: yellow;
+    text-shadow: 2px 2px 10px #ff6347, -2px -2px 10px #ffdab9;
+}
